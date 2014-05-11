@@ -204,6 +204,14 @@ footer {
 	color:#777;
 }
 
+#media img {
+	margin: 5px 7px 5px 7px;
+}
+
+#media img:hover {
+	opacity:0.5;
+}
+
 .circular img {
 	width:100px;
 	height:100px;
