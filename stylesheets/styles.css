@@ -10,7 +10,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color:#222;
-  margin:0 0 20px;
 }
 
 p, ul, ol, table, pre, dl {
@@ -23,14 +22,17 @@ h1, h2, h3 {
 
 h1 {
   font-size:28px;
+  margin:0 0 20px;
 }
 
 h2 {
   color:#393939;
+  margin:0 0 20px;
 }
 
 h3, h4, h5, h6 {
   color:#494949;
+  margin:0 0 5px;
 }
 
 a {
@@ -162,8 +164,8 @@ header ul a strong {
 
 section {
   width:500px;
-  float:right;
-  padding-bottom:50px;
+  margin:10px 0px 20px 0px;
+  padding:10px 0px 20px 0px;
 }
 
 small {
@@ -234,6 +236,22 @@ footer {
 	width:100px;
 	right-margin:100px;
 	padding-top:15px;
+}
+
+.proj-right {
+	padding-top:30px;
+	opacity:1;
+}
+
+.proj-right img:hover {
+	opacity:0.5;
+}
+
+.proj-left {
+	position:relative;
+	float:left;
+	text-align:left;
+	width:65%;
 }
 
 @media print, screen and (max-width: 960px) {
