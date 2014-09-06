@@ -49,7 +49,7 @@ a small {
 }
 
 .wrapper {
-  width:50%;
+  width:860px;
   margin:0 auto;
 }
 
@@ -193,7 +193,6 @@ footer {
 	height:35px;
 	text-align:center;
 	padding-top:15px;
-	background-color:#FFF;
 }
 
 #nav a {
