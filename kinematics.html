@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="utf-8" />
+        <link rel="shortcut icon" href="../favicon.png" type="image/png">
+        <title>CS184 | Dorothy Jung</title> 
+        <link rel="stylesheet" href="../stylesheets/styles.css" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<div id="nav">
+                <a href="../index.html">Home</a>
+        <a href="../assignments/assignment0.html">Assignment0</a>
+        <a href="../assignments/assignment1.html">Assignment1</a>
+        <a href="../assignments/assignment2.html">Assignment2</a>
+        <a href="../assignments/assignment3.html">Assignment3</a>        
+        <a href="../assignments/assignment4.html">Assignment4</a></div>
+        <h1>Assignment 4</h1>
+<section>
+<h2>Inverse Kinematics Solver</h2>        
+<h3>Dorothy Jung (cs184-eu), Gautam Gunjala (cs184-el)</h3>
+<p>From project directory, type 'make' and then './as4' to run. Press 'n' to stop and start animation.
+Press 'j' for Lemniscate, 'k' for Flower, 'l' for Limacon. Dynamically changes goal path. Use arrow keys to rotate and spacebar to exit.
+</p>
+<p>
+We used an arm with 4 segments of lengths of 5.0, 4.0, 3.0, and 2.0. Our arm tries to reach a goal using an inverse kinematics solver by calculating the angles between segments. We calculated the pseudo-inverse of the Jacobian matrix for each joint by using the Eigen SVD solver. Results that gave an out-of-reach goal were handled by scaling the vector toward the goal so that the arm was completely taut and extended.
+</p>
+<p>
+<h3>Demonstration of keyboard functions</h3>
+<iframe src="//player.vimeo.com/video/114937154?byline=0&amp;portrait=0" width="500" height="314" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</p>
+
+
+
+<p>
+<h3>Lemniscate</h3>
+<iframe src="//player.vimeo.com/video/114828695?byline=0&amp;portrait=0" width="500" height="314" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</p>
+
+<p>
+<h3>Limacon</h3>
+Goal moves over path through location of base joint.
+<iframe src="//player.vimeo.com/video/114935164?byline=0&amp;portrait=0" width="500" height="314" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</p>
+
+<p>
+<h3>5-Petal Flower</h3>
+<iframe src="//player.vimeo.com/video/114828696?byline=0&amp;portrait=0" width="500" height="314" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</p>
+</section>
+
+
+</body>
+</html>

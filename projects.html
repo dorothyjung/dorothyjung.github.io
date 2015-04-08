@@ -21,21 +21,35 @@
     
     <section>
 	<div class="proj-left">
-	<h3>Brainability</h3>
+	<h3><a href="https://github.com/dorothyjung/brainability">Brainability</a></h3>
 Mobile application to provide neurofeedback on levels of personal brain activity. Helps the user balance the brain activity between their hemispheres and avoids the types of repetitive brain pattern which lead to headaches, anxiety, and lack of focus. Won the <a href="https://sites.google.com/a/emotiv.com/wiki/environments/design-a-thon">Judges' Choice award</a> at a hackathon sponsored by Emotiv/Pivotal Labs.
 </div>
-    <div class="proj-right"><div class="circular"><a href="https://github.com/dorothyjung/brainability"><img src="brainability/logo.jpg" alt="" width="25px" height="25px" /></a></div></div>
+    <div class="proj-right"><div class="circular"><a href="https://github.com/dorothyjung/brainability"><img src="projects/brainlogo.jpg" alt="" width="25px" height="25px" /></a></div></div>
     </section>
 
     <section>
 	<div class="proj-left">
-	<h3>CS184: Computer Graphics</h3>
-Projects completed for class on foundations of 3-dimensional computer graphics at UC Berkeley. Topics covered include 2D and 3D transformations, interactive 3D graphics programming with OpenGL, shading and lighting models, geometric modeling using Bezier and B-Spline curves, computer graphics rendering including ray tracing and global illumination, signal processing for anti- aliasing and texture mapping, and animation and inverse kinematics.
+	<h3><a href="/projects/raytracer.html">Ray tracer</a></h3>
+Wrote from scratch (including a library for vector operations) a ray tracer that rendered scenes with shadows, reflections, and refractions from .obj files. Implemented linear transformations including scales and rotations, and outputted images to .png files using lodePNG.
 </div>
-    <div class="proj-right"><div class="circular"><a href="http://inst.eecs.berkeley.edu/~cs184-eu/assignments/assignment2.html"><img src="cs184/balls.jpg" alt="" width="25px" height="25px" /></a></div></div>
+    <div class="proj-right"><div class="circular"><a href="http://inst.eecs.berkeley.edu/~cs184-eu/assignments/assignment2.html"><img src="projects/balls.jpg" alt="" width="25px" height="25px" /></a></div></div>
     </section>
 
+    <section>
+	<div class="proj-left">
+	<h3><a href="/projects/bezier.html">3D surface mesh generation</a></h3>
+Subdivided parametric surfaces by interpolating control points defining a set of Bezier curves. Wrote one version for adaptive triangulation and another for uniform subdivision using de Casteljau's algorithm. Wrote parser to render arbitrary .obj files. Rendered with OpenGL.
+</div>
+    <div class="proj-right"><div class="circular"><a href="http://inst.eecs.berkeley.edu/~cs184-eu/assignments/assignment2.html"><img src="projects/teapot.jpg" alt="" width="25px" height="25px" /></a></div></div>
+    </section>
 
+    <section>
+	<div class="proj-left">
+	<h3><a href="/projects/kinematics.html">Inverse kinematics solver</a></h3>
+Animated a 4-segment arm with 3 degrees of freedom. Used Newton’s method to approximate change in joint angles with linearization. Calculated the pseudo-inverse of Jacobian matrices using SVD. Rendered with OpenGL.
+</div>
+    <div class="proj-right"><div class="circular"><a href="http://inst.eecs.berkeley.edu/~cs184-eu/assignments/assignment2.html"><img src="projects/arm.jpg" alt="" width="25px" height="25px" /></a></div></div>
+    </section>
     
 </body>
 

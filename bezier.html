@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="utf-8" />
+        <link rel="shortcut icon" href="../favicon.png" type="image/png">
+        <title>CS184 | Dorothy Jung</title> 
+        <link rel="stylesheet" href="../stylesheets/styles.css" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<div id="nav">
+                <a href="../index.html">Home</a>
+        <a href="../assignments/assignment0.html">Assignment0</a>
+        <a href="../assignments/assignment1.html">Assignment1</a>
+        <a href="../assignments/assignment2.html">Assignment2</a>
+        <a href="../assignments/assignment3.html">Assignment3</a>        
+	<a href="../assignments/assignment4.html">Assignment4</a></div>
+        <h1>Assignment 3</h1>
+<section>
+<h2>Bézier Surfaces</h2>        
+<h3>Dorothy Jung (cs184-eu), Gautam Gunjala (cs184-el)</h3>
+<p>Scroll down for images. Right-click and "Open image in new tab" to see the full-size image.
+</p>
+
+<iframe src="//player.vimeo.com/video/112596068?byline=0&amp;portrait=0" width="500" height="314" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</section>
+
+<h3>Uniform</h3>
+
+<p>Uniform arch wire 0.1</p>
+<img src="../assignments/as3/arch_wire_0.1.jpg" width="400px" height="400px"><br><br>
+
+<p>Uniform arch wire 0.1 (2)</p>
+<img src="../assignments/as3/arch_wire_0.1_2.jpg" width="400px" height="400px"><br><br>
+
+<p>Uniform arch filled flat 0.1</p>
+<img src="../assignments/as3/arch_filled_flat_0.1.jpg" width="400px" height="400px"><br><br>
+
+<p>Uniform arch filled smooth 0.1</p>
+<img src="../assignments/as3/arch_filled_smooth_0.1.jpg" width="400px" height="400px"><br><br>
+
+<p>Uniform arch filled smooth 0.1 (2)</p>
+<img src="../assignments/as3/arch_filled_smooth_0.1_2.jpg" width="400px" height="400px"><br><br>
+
+<p>Uniform arch filled smooth 0.1 (3)</p>
+<img src="../assignments/as3/arch_filled_smooth_0.1_3.jpg" width="400px" height="400px"><br><br>
+
+<p>Uniform arch wire 0.01</p>
+<img src="../assignments/as3/arch_wire_0.01.jpg" width="400px" height="400px"><br><br>
+
+<p>Uniform arch wire 0.01 (2)</p>
+<img src="../assignments/as3/arch_wire_0.01_2.jpg" width="400px" height="400px"><br><br>
+
+<p>Uniform arch wire zoom 0.01</p>
+<img src="../assignments/as3/arch_wire_0.01_zoomin.jpg" width="400px" height="400px"><br><br>
+
+<p>Uniform arch filled smooth 0.01</p>
+<img src="../assignments/as3/arch_filled_0.01.jpg" width="400px" height="400px"><br><br>
+
+<p>Uniform teapot fill smooth 0.1</p>
+<img src="../assignments/as3/teapot_fill_0.1.jpg" width="400px" height="400px"><br><br>
+
+<p>Uniform teapot wire 0.1</p>
+<img src="../assignments/as3/teapot_wire_0.1.jpg" width="400px" height="400px"><br><br>
+
+<p>Uniform teapot wire top view 0.1</p>
+<img src="../assignments/as3/teapot_wire_top_0.1.jpg" width="400px" height="400px"><br><br>
+
+<p>Uniform teapot fill smooth top view 0.1</p>
+<img src="../assignments/as3/teapot_fill_topdown_0.1.jpg" width="400px" height="400px"><br><br>
+
+<p>Uniform teapot fill smooth rotated and translated 0.1</p>
+<img src="../assignments/as3/teapot_fill_transform_0.1.jpg" width="400px" height="400px"><br><br>
+
+<p>Uniform teapot fill smooth transformed top view 0.1</p>
+<img src="../assignments/as3/teapot_fill_transform_top_0.1.jpg" width="400px" height="400px"><br><br>
+
+<p>Uniform teapot fill flat 0.1</p>
+<img src="../assignments/as3/teapot_fill_flat_rotate_0.1.jpg" width="400px" height="400px"><br><br>
+
+<p>Uniform teapot fill flat zoom in 0.1</p>
+<img src="../assignments/as3/teapot_fill_flat_zoomin_0.1.jpg" width="400px" height="400px"><br><br>
+
+<p>Uniform teapot fill flat zoom out 0.1</p>
+<img src="../assignments/as3/teapot_fill_flat_zoomout_0.1.jpg" width="400px" height="400px"><br><br>
+
+<p>Uniform teapot wire 0.01</p>
+<img src="../assignments/as3/teapot_wire_0.01.jpg" width="400px" height="400px"><br><br>
+
+<p>Uniform teapot wire top view 0.01</p>
+<img src="../assignments/as3/teapot_wire_top_0.01.jpg" width="400px" height="400px"><br><br>
+
+<p>Uniform teapot wire top zoom in 0.01</p>
+<img src="../assignments/as3/teapot_wire_top_zoomin_0.01.jpg" width="400px" height="400px"><br><br>
+
+<p>Uniform teapot fill smooth 0.01</p>
+<img src="../assignments/as3/teapot_fill_smooth_0.01.jpg" width="400px" height="400px"><br><br>
+
+<p>Teddy bear wire 0.5</p>
+<img src="../assignments/as3/teddy_0.5_wire.jpg" width="400px" height="400px"><br><br>
+
+<p>Teddy bear fill smooth 0.5</p>
+<img src="../assignments/as3/teddy_0.5_fill.jpg" width="400px" height="400px"><br><br>
+
+<p>Wolf wire rotated zoom in 0.5</p>
+<img src="../assignments/as3/wolf_0.5_nothiddenwire_rotated_zoomin.jpg" width="400px" height="400px"><br><br>
+
+<p>Wolf fill smooth 0.5</p>
+<img src="../assignments/as3/wolf_0.5_smooth.jpg" width="400px" height="400px"><br><br>
+
+<p>Wolf fill flat 0.5</p>
+<img src="../assignments/as3/wolf_0.5_flat" width="400px" height="400px"><br><br>
+
+<p>Wolf fill smooth zoom in 0.1</p>
+<img src="../assignments/as3/wolf_0.1_smooth_zoomin.jpg" width="400px" height="400px"><br><br>
+
+
+<h3>Adaptive</h3>
+
+<p>Adaptive arch wireframe 0.1</p>
+<img src="../assignments/as3/a_arch_wire_0.1.jpg" width="400px" height="400px"><br><br>
+
+<p>Adaptive arch wireframe rotated 0.1</p>
+<img src="../assignments/as3/a_arch_wire_rotate_0.1.jpg" width="400px" height="400px"><br><br>
+
+<p>Adaptive arch wireframe 0.01</p>
+<img src="../assignments/as3/a_arch_wire_0.01.jpg" width="400px" height="400px"><br><br>
+
+<p>Adaptive arch fill smooth 0.1</p>
+<img src="../assignments/as3/a_arch_fill_0.1.jpg" width="400px" height="400px"><br><br>
+
+<p>Adaptive arch fill rotated 0.1</p>
+<img src="../assignments/as3/a_arch_fill_rotate_0.1.jpg" width="400px" height="400px"><br><br>
+
+<p>Adaptive arch fill flat rotated 0.01</p>
+<img src="../assignments/as3/a_arch_fill_flat_rotate_0.1.jpg" width="400px" height="400px"><br><br>
+
+<p>Adaptive arch fill smooth 0.01</p>
+<img src="../assignments/as3/a_arch_fill_0.01.jpg" width="400px" height="400px"><br><br>
+
+<p>Adaptive arch fill smooth rotated 0.01</p>
+<img src="../assignments/as3/a_arch_fill_rotate_0.1.jpg" width="400px" height="400px"><br><br>
+
+<p>Adaptive arch fill flat 0.01</p>
+<img src="../assignments/as3/a_arch_fill_flat_0.01.jpg" width="400px" height="400px"><br><br>
+
+<p>Adaptive teapot wireframe 0.1</p>
+<img src="../assignments/as3/a_teapot_wire_0.1.jpg" width="400px" height="400px"><br><br>
+
+<p>Adaptive teapot wireframe rotated 0.1</p>
+<img src="../assignments/as3/a_teapot_wire_rotate_0.1.jpg" width="400px" height="400px"><br><br>
+
+<p>Adaptive teapot wireframe top view 0.1</p>
+<img src="../assignments/as3/a_teapot_wire_top_0.1.jpg" width="400px" height="400px"><br><br>
+
+<p>Adaptive teapot fill smooth 0.1</p>
+<img src="../assignments/as3/a_teapot_fill_smooth_0.1.jpg" width="400px" height="400px"><br><br>
+
+<p>Adaptive teapot fill smooth rotated 0.1</p>
+<img src="../assignments/as3/a_teapot_fill_smooth_rotate_0.1.jpg" width="400px" height="400px"><br><br>
+
+<p>Adaptive teapot fill smooth top view 0.1</p>
+<img src="../assignments/as3/a_teapot_fill_smooth_top_0.1.jpg" width="400px" height="400px"><br><br>
+
+<p>Adaptive teapot fill flat 0.1</p>
+<img src="../assignments/as3/a_teapot_fill_flat_0.1.jpg" width="400px" height="400px"><br><br>
+
+<h3>Extra Credit - Hidden-line mode</h3>
+
+<p>Uniform teapot hidden-line 0.1</p>
+<img src="../assignments/as3/teapot_wire_ec_0.1.jpg" width="400px" height="400px"><br><br>
+
+<p>Uniform teapot hidden-line rotated 0.1</p>
+<img src="../assignments/as3/teapot_wire_hid_rotate_0.1.jpg" width="400px" height="400px"><br><br>
+
+<p>Uniform teapot hidden-line translated 0.1</p>
+<img src="../assignments/as3/teapot_wire_hid_translate_0.1.jpg" width="400px" height="400px"><br><br>
+
+<p>Wolf hidden-line rotated zoom in 0.5</p>
+<img src="../assignments/as3/wolf_0.5_hiddenwire_rotated_zoomin.jpg" width="400px" height="400px"><br><br>
+
+<p>Adaptive teapot hidden-line 0.1</p>
+<img src="../assignments/as3/a_teapot_wire_hid_0.1.jpg" width="400px" height="400px"><br><br>
+
+<p>Adaptive teapot hidden-line rotated 0.1</p>
+<img src="../assignments/as3/a_teapot_wire_hid_rotate_0.1.jpg" width="400px" height="400px"><br><br>
+
+</body>
+</html>
