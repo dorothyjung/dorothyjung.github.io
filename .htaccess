@@ -1,7 +1,8 @@
 RewriteEngine on
 
-RewriteCond %{HTTP_HOST} ^www.dorothyjung.com$ [NC]
-RewriteRule ^(.*)$ http://dorothyjung.com/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^(.*)$ %{HTTP_HOST}/$1 [C]
+RewriteRule ^www\.(.*)$ http://$1 [R=301,L]
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
