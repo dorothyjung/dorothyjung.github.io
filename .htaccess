@@ -1,3 +1,4 @@
+INVALID LINE HERE
 RewriteEngine on
 
 RewriteCond %{HTTP_HOST} ^www\. [NC]
