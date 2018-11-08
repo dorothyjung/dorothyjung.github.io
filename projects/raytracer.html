@@ -10,46 +10,112 @@
 </head>
 
 <body>
-<div id="nav">
-		<a href="../">Home</a>
-		<a href="../projects">Projects</a>
-		<a href="../">Contact</a>
-        </div>
-<section>
-<h2>Ray Tracer</h2>        
-All images were produced by outputting to a .PNG file, then converting to .JPG format for the purposes of embedding on this page. Right-click and "Open image in new tab" to see the full-size 1000x1000 image.
-</section>
+    <header id="nav">
+        <a href="/">Home</a>
+        <a href="/projects">Projects</a>
+        <a href="/contact">Contact</a>
+    </header>
 
-<h3>Shading from multiple light sources</h3>
+<h1>Ray Tracer</h1>
+<p>
+All images were produced by outputting to a .PNG file, then converting to .JPG format for the purposes of embedding on this page. Open image in new tab to see the full-size image.
+</p>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-<p>Time to run: 00:00:01</p>
-<img src="../assignments/as2/image-01.jpg" width="400px" height="400px"><br>
-<code>./as2 -f input-01 -d 1000 1000</code><br><br>
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <img src="../assignments/as2/image-02.jpg" class="slideshow-img">
+    <div class="text">
+    Shading from multiple light sources
+    <br>
+    Time to run: 00:00:01
+    </div>
+  </div>
 
-<h3>More shading from multiple light sources</h3>
-<p>Time to run: 00:00:01</p>
-<img src="../assignments/as2/image-02.jpg" width="400px" height="400px"><br>
-<code>./as2 -f input-02 -d 1000 1000</code><br><br>
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <img src="../assignments/as2/image-03.jpg" class="slideshow-img">
+    <div class="text">
+    Simple reflection with spheres
+    <br>
+    Time to run: 00:00:01
+    </div>
+  </div>
 
-<h3>Simple reflection with spheres</h3>
-<p>Time to run: 00:00:01</p>
-<img src="../assignments/as2/image-03.jpg" width="400px" height="400px"><br>
-<code>./as2 -f input-03 -d 1000 1000</code><br><br>
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img src="../assignments/as2/image-04.jpg" class="slideshow-img">
+    <div class="text">
+    Reflection with transformations and triangles
+    <br>
+    Time to run: 00:00:03
+    </div>
+  </div>
 
-<h3>Reflection with transformations and triangles</h3>
-<p>Time to run: 00:00:03</p>
-<img src="../assignments/as2/image-04.jpg" width="400px" height="400px"><br>
-<code>./as2 -f input-04 -d 1000 1000</code><br><br>
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="../assignments/as2/image-05.jpg" class="slideshow-img">
+    <div class="text">
+    Easter Eggs - Ellipsoids with reflections and multiple light sources
+    <br>
+    Time to run: 00:00:04
+    </div>
+  </div>
 
-<h3>Easter Eggs! Ellipsoids with reflections and pretty lights</h3>
-<p>Time to run: 00:00:04</p>
-<img src="../assignments/as2/image-05.jpg" width="400px" height="400px"><br>
-<code>./as2 -f input-05 -d 1000 1000</code><br><br>
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="../assignments/as2/image-06.jpg" class="slideshow-img">
+    <div class="text">
+    Reflection with red sphere and .obj files for 2 teddy bears
+    <br>
+    Time to run: 03:00:00
+    </div>
+  </div>
+</div>
 
-<h3>Reflection with red sphere and .obj files for 2 teddy bears</h3>
-<p>Time to run: 03:00:00</p>
-<img src="../assignments/as2/image-06.jpg" width="400px" height="400px"><br>
-<code>./as2 -f input-06 -d 1000 1000</code><br><br>
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
 
 </body>
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1} 
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none"; 
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block"; 
+        dots[slideIndex-1].className += " active";
+    }
+</script>
 </html>
